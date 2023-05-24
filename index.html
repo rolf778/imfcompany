@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="./resources/css/reset.css" rel="stylesheet">
+  <link href="./resources/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+
+    <div class="headerlogo">
+      <img src="./resources/images/logo1.png" />
+    </div>
+    <nav class="headerlinks">
+      <div class="burger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="desktop">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#missions-whole">CHOICES</a></li>
+        <li><a href="#members-whole">MEMBERS</a></li>
+        <li><a href="#contacts-whole">CONTACTS</a></li>
+      </ul>
+      <ul class="menu">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#missions-whole">CHOICES</a></li>
+        <li><a href="#members-whole">MEMBERS</a></li>
+        <li><a href="#contacts-whole">CONTACTS</a></li>
+      </ul>
+        </navs>
+
+  </header>
+
+  <main>
+    <section id="about">
+      <h1 class="about-title">IMF</h1>
+
+      <div class="description">
+        <h2>Impossible Mission Force</h2>
+        <br>
+        <p>A team of highly trained ex-governmental operatives specializing in
+          crisis-solving business.</p>
+      </div>
+    </section>
+
+
+    <section id="missions-whole">
+      <h1 class="section-title">Missions</h1>
+      <section id="missions">
+        <div class="rescue case">
+          <h2>Rescue</h2>
+        </div>
+        <div class="anti-terrorism case">
+          <h2>Anti-Terrorism</h2>
+        </div>
+        <div class="infiltration case">
+          <h2>Infiltration</h2>
+        </div>
+        <div class="protection case">
+          <h2>Protection</h2>
+        </div>
+      </section>
+    </section>
+
+
+    <section id="members-whole">
+      <h1 class="section-title">Team</h1>
+      <section id="members">
+        <div class="no1 person">
+          <h2>Paul A.</h2>
+        </div>
+        <div class="no2 person">
+          <h2>Rebecca F.</h2>
+        </div>
+        <div class="no3 person">
+          <h2>Alix B.</h2>
+        </div>
+        <div class="no4 person">
+          <h2>Jensen A.</h2>
+        </div>
+        <div class="no5 person">
+          <h2>Tommy C.</h2>
+        </div>
+      </section>
+    </section>
+
+    <section id="contacts-whole">
+      <h1 class="section-title">Contacts</h1>
+      <section id="contacts">
+        <p>Representative:Rolf</p>
+        <br>
+        <p>Email:j942856@yahoo.com</p>
+        <br>
+        <p>Adress:somewhere in Taiwan</p>
+      </section>
+    </section>
+
+
+  </main>
+
+
+  <footer>
+    <img src="./resources/images/copyrightlogo.png" /><p>ALL RIGHTS RESERVED</p>
+  </footer>
+
+<!-- Javascript -->
+<script>
+const burgerMenu = document.querySelector('.burger-menu');
+const menu = document.querySelector('.menu');
+
+burgerMenu.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
+</script>
+
+</body>
+
+
+
+</html>

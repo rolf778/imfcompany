@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
+
+@font-face {
+  font-family: 'Impossible';
+  src: url('../fonts/Impossible.ttf');
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color:white;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+header {
+  position: fixed;
+  z-index: 5;
+  height: 80px;
+  width: 100%;
+  background-color: #FBF2D1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+
+}
+
+.headerlogo img {
+  height: 100px;
+  margin-left: 1.5rem;
+}
+.burger-menu{
+  width:30px;
+  height:20px;
+
+  display:none;
+  flex-direction:column;
+  justify-content:space-around;
+  cursor:pointer;
+}
+.bar{
+  width:100%;
+  height:3px;
+  background-color:black;
+}
+.desktop{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+
+}
+.menu{
+
+  display:none;
+
+}
+
+.menu.active {
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:flex-start;
+  background-color:#FBF2D1;
+  position:absolute;
+  list-style-type:none;
+  right:0;
+  margin-top:30px;
+
+
+}
+nav {
+  margin-right: 1rem;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav li a {
+  color: #221C06;
+  font-size: 2.8rem;
+  font-weight: bold;
+  font-family: 'Impossible';
+}
+
+
+
+@media only screen and (max-width:950px){
+  .desktop{
+    display:none;
+  }
+  .burger-menu{
+    display:flex;
+  }
+  nav li a{
+    font-size:2rem;
+  }
+}
+
+
+body {
+  background-color: #060501;
+}
+
+main {
+  margin-top: 100px;
+}
+.section-title{
+  color:#F2F2BE;
+  font-size:4rem;
+  margin-top:2rem;
+
+  text-align:center;
+  font-family:'Impossible';
+}
+
+#about {
+  width: 95%;
+  display: flex;
+  background-image: url('../images/about-pic.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #E9EBE9;
+  height: 83vh;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  margin: 0 auto;
+  5
+}
+
+.about-title {
+  color: white;
+  font-weight: 900;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  background-color: black;
+  opacity: 0.3;
+}
+
+.description {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width:950px){
+  #about{
+    max-height:60vh;
+    min-height:350px;
+  }
+
+}
+
+
+
+
+#missions-whole{
+  margin-top:3rem;
+}
+#missions {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 2rem auto;
+}
+
+.case {
+  width: 300px;
+  min-height: 300px;
+  display: flex;
+  align-items: flex-end;
+  margin: 2rem;
+  justify-content: center;
+
+}
+
+.rescue {
+  background-image: url('../images/rescue.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+.anti-terrorism {
+  background-image: url('../images/antit.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 6;
+}
+
+.infiltration {
+  background-image: url('../images/infil.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 6;
+  color: black;
+  justify-content: flex-end;
+}
+
+.protection {
+  background-image: url('../images/protect.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+#members-whole{
+  margin-top:3rem;
+}
+#members{
+  display:flex;
+
+  flex-wrap:wrap-reverse;
+
+  color:white;
+  justify-content:space-around;
+  align-items:center;
+  width:90%;
+  margin:2rem auto;
+  background-color:#050503;
+}
+
+.person{
+  width:15rem;
+  height:30rem;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  margin:1rem 1rem;
+
+}
+.no1{
+  background-image: url('../images/paul.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.no2{
+  background-image: url('../images/rebecca.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.no3{
+  background-image: url('../images/alix.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.no4{
+  background-image: url('../images/jensen.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.no5{
+  background-image: url('../images/tommy.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#members h2{
+  background-color:black;
+}
+
+
+
+
+#contacts-whole{
+  margin-top:15rem;
+}
+#contacts{
+  display:flex;
+  flex-flow:column;
+  align-items:center;
+  justify-content:center;
+  padding:2rem;
+}
+
+
+
+
+footer{
+  display:flex;
+  align-items:center;
+}
+
+
+footer img{
+    width:2rem;
+    height:2rem;
+    background-color:transparent;
+}
