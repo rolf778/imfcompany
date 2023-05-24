@@ -9,7 +9,7 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color:white;
+  color: white;
 }
 
 h2 {
@@ -28,53 +28,51 @@ header {
   justify-content: space-between;
   top: 0;
   left: 0;
-
 }
 
 .headerlogo img {
   height: 100px;
   margin-left: 1.5rem;
 }
-.burger-menu{
-  width:30px;
-  height:20px;
 
-  display:none;
-  flex-direction:column;
-  justify-content:space-around;
-  cursor:pointer;
+.burger-menu {
+  width: 30px;
+  height: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
 }
-.bar{
-  width:100%;
-  height:3px;
-  background-color:black;
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: black;
 }
-.desktop{
+
+.desktop {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items:center;
-
+  align-items: center;
 }
-.menu{
 
-  display:none;
-
+.menu {
+  display: none;
 }
 
 .menu.active {
-  display:flex;
+  display: flex;
   flex-direction: column;
-  justify-content:center;
-  align-items:flex-start;
-  background-color:#FBF2D1;
-  position:absolute;
-  list-style-type:none;
-  right:0;
-  margin-top:30px;
-
-
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #FBF2D1;
+  position: absolute;
+  list-style-type: none;
+  right: 0;
+  margin-top: 30px;
 }
+
 nav {
   margin-right: 1rem;
 }
@@ -90,25 +88,25 @@ nav li a {
   font-family: 'Impossible';
 }
 
+@media only screen and (max-width:950px) {
+  .desktop {
+    display: none;
+  }
 
+  .burger-menu {
+    display: flex;
+  }
 
-@media only screen and (max-width:950px){
-  .desktop{
-    display:none;
+  nav li a {
+    font-size: 2rem;
   }
-  .burger-menu{
-    display:flex;
-  }
-  nav li a{
-    font-size:2rem;
-  }
+
   .headerlogo img {
     width: 50vh;
     height: 20vh;
     margin-top: 1rem;
   }
 }
-
 
 body {
   background-color: #060501;
@@ -117,13 +115,13 @@ body {
 main {
   margin-top: 100px;
 }
-.section-title{
-  color:#F2F2BE;
-  font-size:4rem;
-  margin-top:2rem;
 
-  text-align:center;
-  font-family:'Impossible';
+.section-title {
+  color: #F2F2BE;
+  font-size: 4rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-family: 'Impossible';
 }
 
 #about {
@@ -161,20 +159,17 @@ main {
   opacity: 0.5;
 }
 
-@media only screen and (max-width:950px){
-  #about{
-    max-height:60vh;
-    min-height:350px;
+@media only screen and (max-width:950px) {
+  #about {
+    max-height: 60vh;
+    min-height: 350px;
   }
-
 }
 
-
-
-
-#missions-whole{
-  margin-top:3rem;
+#missions-whole {
+  margin-top: 3rem;
 }
+
 #missions {
   display: flex;
   flex-wrap: wrap;
@@ -192,7 +187,6 @@ main {
   align-items: flex-end;
   margin: 2rem;
   justify-content: center;
-
 }
 
 .rescue {
@@ -229,90 +223,88 @@ main {
   flex-grow: 1;
 }
 
-#members-whole{
-  margin-top:3rem;
-}
-#members{
-  display:flex;
-
-  flex-wrap:wrap-reverse;
-
-  color:white;
-  justify-content:space-around;
-  align-items:center;
-  width:90%;
-  margin:2rem auto;
-  background-color:#050503;
+#members-whole {
+  margin-top: 3rem;
 }
 
-.person{
-  width:15rem;
-  height:30rem;
-  display:flex;
-  align-items:flex-end;
-  justify-content:center;
-  margin:1rem 1rem;
-
+#members {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: 2rem auto;
+  background-color: #050503;
 }
-.no1{
+
+.person {
+  width: 15rem;
+  height: 30rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 1rem 1rem;
+}
+
+.no1 {
   background-image: url('../images/paul.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.no2{
+
+.no2 {
   background-image: url('../images/rebecca.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.no3{
+
+.no3 {
   background-image: url('../images/alix.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.no4{
+
+.no4 {
   background-image: url('../images/jensen.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.no5{
+
+.no5 {
   background-image: url('../images/tommy.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#members h2{
-  background-color:black;
+
+#members h2 {
+  background-color: black;
 }
 
-
-
-
-#contacts-whole{
-  margin-top:15rem;
-}
-#contacts{
-  display:flex;
-  flex-flow:column;
-  align-items:center;
-  justify-content:center;
-  padding:2rem;
+#contacts-whole {
+  margin-top: 15rem;
 }
 
-
-
-
-footer{
-  display:flex;
-  align-items:center;
+#contacts {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+}
 
-footer img{
-    width:2rem;
-    height:2rem;
-    background-color:transparent;
+footer img {
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
 }
