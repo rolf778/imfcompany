@@ -181,8 +181,8 @@ main {
 }
 
 .case {
-  width: 30vh;
-  min-height: 30vh;
+  width: 40vh;
+  min-height: 40vh;
   display: flex;
   align-items: flex-end;
   margin: 2rem;
@@ -211,7 +211,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   flex-grow: 6;
- 
+
   justify-content: flex-end;
 }
 .infiltration h2{
