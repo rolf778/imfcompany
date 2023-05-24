@@ -103,8 +103,8 @@ nav li a {
     font-size:2rem;
   }
   .headerlogo img {
-    width: 60%;
-    height: 100%;
+    width: 50vh;
+    height: 20vh;
     margin-top: 1rem;
   }
 }
